@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="c2.css">
+</head>
+<body>
+    <center><h1>Room Elements</h1></center>
+    <script>
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        function shuffleAllRooms() {
+            const allRoomTables = document.querySelectorAll('.room-table');
+            allRoomTables.forEach(table => {
+                const rows = Array.from(table.getElementsByTagName('tr'));
+                rows.shift(); // Remove the header row
+                const shuffledRows = shuffleArray(rows);
+                shuffledRows.forEach(row => table.appendChild(row));
+            });
+        }
+    </script>
+<body background="mypic1.avif">
+    <center>
+        <table id="girlstable" border="1" bordercolor="white" width="100%">
+            <tr>
+                <td><center>
+                    <table  class="room-table" height="100px" width="300px">
+                        <div class="container"><td colspan="5"><div class="top"><center><div class="room-number"><b>Room 1</b></div></center></div></td></div>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>A</td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                            <td>Lina Thalal</td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>B</td>
+                            <td></td>
+                            <td>2</td>
+                            <td></td>
+                            <td>Yogeshree Shende</td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>C</td>
+                            <td></td>
+                            <td>3</td>
+                            <td></td>
+                            <td>Shamiksha Mohekar</td>
+                        </tr>
+                    </table></center>
+                </td>
+                <td><center>
+                    <table class="room-table" height="100px" width="300px">
+                        <tr>
+                            <div class="container"><td colspan="5"><div class="top"><center><div class="room-number"><b>Room 2</b></div></center></div></td></div>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>A</td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                            <td>Gayatri Khodke</td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>B</td>
+                            <td></td>
+                            <td>2</td>
+                            <td></td>
+                            <td>Kanchan Mahore</td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>C</td>
+                            <td></td>
+                            <td>3</td>
+                            <td></td>
+                            <td>Arpita Belsare</td>
+                        </tr>
+                    </table></center>
+                </td>
+                <td><center>
+                    <table class="room-table" height="100px" width="300px">
+                        <tr>
+                            <div class="container"><td colspan="5"><div class="top"><center><div class="room-number"><b>Room 3</b></div></center></div></td></div>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>A</td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                            <td>Dhanashri Kakde</td></div>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>B</td>
+                            <td></td>
+                            <td>2</td>
+                            <td></td>
+                            <td>Vaishnavi Kakde</td></div>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>C</td>
+                            <td></td>
+                            <td>3</td>
+                            <td></td>
+                            <td>Chanda Dhod</td>
+                        </tr>
+                    </table></center>
+                </td>
+            </tr>
+            <tr>
+                <td><center>
+                    <table class="room-table" height="100px" width="300px">
+                        <tr>
+                            <div class="container"><td colspan="5"><div class="top"><center><div class="room-number"><b>Room 4</b></div></center></div></td></div>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>A</td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                            <td>Nishigandha Kamble</td></div>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>B</td>
+                            <td></td>
+                            <td>2</td>
+                            <td></td>
+                            <td>Komal Bahade</td></div>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>C</td>
+                            <td></td>
+                            <td>3</td>
+                            <td></td>
+                            <td>Krutika Tatte</td>
+                        </tr>
+                    </table></center>
+                </td>
+                <td><center>
+                    <table class="room-table" height="100px" width="300px">
+                        <tr>
+                            <div class="container"><td colspan="5"><div class="top"><center><div class="room-number"><b>Room 5</b></div></center></div></td></div>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>A</td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                            <td>Harshada Thakare</td></div>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>B</td>
+                            <td></td>
+                            <td>2</td>
+                            <td></td>
+                            <td>Harsha Chandurkar</td></div>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>C</td>
+                            <td></td>
+                            <td>3</td>
+                            <td></td>
+                            <td>Mayuri Kadaw</td>
+                        </tr>
+                    </table></center>
+                </td>
+                <td><center>
+                    <table class="room-table" height="100px" width="300px">
+                        <tr>
+                            <div class="container"><td colspan="5"><div class="top"><center><div class="room-number"><b>Room 6</b></div></center></div></td></div>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>A</td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                            <td>Monali Dhole</td></div>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>B</td>
+                            <td></td>
+                            <td>2</td>
+                            <td></td>
+                            <td>Puja Kolhe</td></div>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>C</td>
+                            <td></td>
+                            <td>3</td>
+                            <td></td>
+                            <td>Jyoti Bhasme</td>
+                        </tr>
+                    </table></center>
+                </td>
+            </tr>
+            <tr>
+                <td><center>
+                    <table class="room-table" height="100px" width="300px">
+                        <tr>
+                            <div class="container"><td colspan="5"><div class="top"><center><div class="room-number"><b>Room 7</b></div></center></div></td></div>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>A</td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                            <td>Maduri Ghore</td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>B</td>
+                            <td></td>
+                            <td>2</td>
+                            <td></td>
+                            <td>Priti Wanjari</td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>C</td>
+                            <td></td>
+                            <td>3</td>
+                            <td></td>
+                            <td>Lalita Lanje</td>
+                        </tr>
+                    </table></center>
+                </td>
+                <td><center>
+                    <table class="room-table" height="100px" width="300px">
+                        <tr>
+                            <div class="container"><td colspan="5"><div class="top"><center><div class="room-number"><b>Room 8</b></div></center></div></td></div>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>A</td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                            <td>Komal Bawane</td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>B</td>
+                            <td></td>
+                            <td>2</td>
+                            <td></td>
+                            <td>Vaishnavi Chavhan</td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>C</td>
+                            <td></td>
+                            <td>3</td>
+                            <td></td>
+                            <td>Shakshi Patil</td>
+                        </tr>
+                    </table></center>
+                </td>
+                <td><center>
+                    <table class="room-table" height="100px" width="300px">
+                        <tr>
+                            <div class="container"><td colspan="5"><div class="top"><center><div class="room-number"><b>Room 9</b></div></center></div></td></div>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>A</td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                            <td>Swati Patil</td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>B</td>
+                            <td></td>
+                            <td>2</td>
+                            <td></td>
+                            <td>Vaishnavi Paraskar</td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>C</td>
+                            <td></td>
+                            <td>3</td>
+                            <td></td>
+                            <td>Priya Sadar</td>
+                        </tr>
+                        </table>
+                    </table></center>
+                </td>
+            </tr>
+        </table>
+        <button onclick="shuffleAllRooms()" id ="shuffleButton">Shuffle</button>
+    </center>
+</body>
+</html>
